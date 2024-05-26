@@ -1,0 +1,246 @@
+/* for top navigation of index */
+
+.responsive-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.responsive-text {
+  font-size: 50px;
+}
+
+@media (max-width: 994px) {
+  .responsive-text {
+    font-size: 20px;
+  }
+}
+
+.logo-set {
+  display: block;
+}
+
+@media (max-width: 994px) {
+  .logo-set {
+    display: none;
+  }
+}
+/* when website open in mobile */
+.istanbul-dondurma {
+  display: block;
+}
+@media (max-width: 525px) {
+  .istanbul-dondurma {
+    display: none;
+  }
+}
+
+/* for add new-istandul-dondurma */
+.new-istandul-dondurma {
+  display: none;
+}
+@media (min-width: 525px) {
+  .new-istandul-dondurma {
+    display: none;
+  }
+}
+.top-links {
+    display: block;
+}
+@media (min-width: 768px) {
+  .top-links {
+    display: none;
+  }
+}
+
+.mobile-head-nav-small {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: inline;
+}
+@media (min-width: 349px) {
+  .mobile-head-nav-small {
+    display: none;
+  }
+}
+
+.mobile-head-nav {
+  display: none;
+}
+@media (min-width: 350px) {
+  .mobile-head-nav {
+    display: inline;
+  }
+}
+@media (min-width: 525px) {
+  .mobile-head-nav {
+    display: none;
+  }
+}
+
+.barsize {
+  display: none;
+}
+@media (min-width: 350px) {
+  .barsize  {
+    display: inline;
+    font-size: 16px;
+  }
+}
+@media (min-width: 459px) {
+  .barsize  {
+    display: inline;
+    font-size: 20px;
+  }
+}
+@media (min-width: 525px) {
+  .barsize  {
+    display: none;
+  }
+}
+
+.full-adjust {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: none;
+}
+@media (min-width: 992px) {
+  .full-adjust {
+    display: inline;
+  }
+}
+@media (min-width: 1144px) {
+  .full-adjust {
+    display: none;
+  }
+}
+
+.end-adjust {
+  display: none;
+}
+
+@media (min-width: 1145px) {
+  .end-adjust {
+    display: inline;
+  }
+}
+.top-nav {
+  background-color: #10acb4;
+}
+.istanbul {
+  color: #10acb4;
+}
+.tricky {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*twitter*/
+.twitter_adjust {
+  display: none;
+}
+@media (min-width: 350px) {
+  .twitter_adjust {
+    display: inline;
+  }
+}
+@media (min-width: 768px) {
+  .twitter_adjust {
+    display: none;
+  }
+}
+
+
+/* bg-branch */
+.bg-branch {
+  background-color: white;
+}
+.bg-branch:hover {
+  background-color: #10acb4;
+}
+.bg-branch:hover .branch-name {
+  color: white;
+}
+
+
+/* Email input field */
+.email-set {
+  align-items: center;
+  justify-content: center;
+}
+.container-email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-email {
+  width: 350px;
+  height: 40px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, .2);
+  border-radius: 60px;
+  overflow: hidden;
+}
+
+.subscription {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.subscription .add-email{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+}
+
+.subscription .submit-email {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100% - 2px);
+  width: 100px;
+  border: none;
+  border-radius: 60px;
+  outline: none;
+  margin: 1px;
+  padding: 0 20px;
+  cursor: pointer;
+  background: #10acb4;
+  color: #FFFFFF;
+  transition: width .3s ease-in-out,
+  background .3s ease-in-out;
+}
+
+.subscription.done .submit-email {
+  width: calc(100% - 2px);
+  background: rgb(241, 149, 178);
+}
+
+.subscription .submit-email .before-submit,
+.subscription .submit-email .after-submit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 38px;
+  transition: visibility .3s ease-in-out,
+  opacity .3s ease-in-out;
+}
+
+.subscription.done .submit-email .before-submit,
+.subscription:not(.done) .submit-email .after-submit {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.subscription .submit-email .after-submit {
+  transition-delay: .1s;
+}
+
+.subscription:not(.done) .submit-email .before-submit,
+.subscription.done .submit-email .after-submit {
+  visibility: visible;
+  opacity: 1;
+}
